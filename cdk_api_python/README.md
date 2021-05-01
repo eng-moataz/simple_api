@@ -6,6 +6,7 @@ This project demonstrate how to build the infrastructure required for a simple a
 ## Table of contents:
 - [Prerequisites](#Prerequisites)
 - [Setup](#Setup)
+- [Cleanup](#Cleanup)
 
 ## Prerequisites
 To be able to provision the solution you would need the following:
@@ -77,4 +78,12 @@ command.
  * `cdk diff`        compare deployed stack with current state
  * `cdk docs`        open CDK documentation
 
+---
+## Cleanup
+
+In order to delete all the infrastructure created, you can perform the below command which will delete the cloudformation stack used to provision the resources.
+
+```
+cdk destroy
+```
 Enjoy!
