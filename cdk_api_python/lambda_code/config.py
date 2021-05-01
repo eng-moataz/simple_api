@@ -1,0 +1,3 @@
+configuration = {
+    "env": "dev"
+}
