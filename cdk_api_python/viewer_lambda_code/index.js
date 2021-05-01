@@ -2,7 +2,6 @@ const { DynamoDB } = require('aws-sdk');
 const render = require('./render');
 
 exports.handler = async function(event) {
-  console.log("hello from lambda");
   console.log('request:', JSON.stringify(event, undefined, 2));
 
   const dynamo = new DynamoDB();

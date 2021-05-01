@@ -39,7 +39,6 @@ def scan_last_x_items(table_client, limit_number):
         sorted_items = sorted(json.loads(items), key=lambda k: k['millisec_epoch_time_stamp'],reverse=True)
         # get subsit of items required
         return_items =  sorted_items[:limit_number]
-        print(return_items)
         return {
                 'statusCode': 200,
                 'headers': {
