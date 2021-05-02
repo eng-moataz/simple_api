@@ -29,6 +29,10 @@ class CdkApiPythonStack(cdk.Stack):
             index_name='millisec_epoch_time_stamp'
         )
 
+        # delete table if the infrastructure is deleted
+        cfn_table = table.node.find_child("Resource")
+        cfn_table.apply_removal_policy(cdk.RemovalPolicy.DESTROY)
+
         # Defines an AWS Lambda resource
         api_lambda = _lambda.Function(
             self, 'ApiHandler',
