@@ -5,6 +5,7 @@ This project demonstrate how to build the infrastructure required for a simple a
 ## Table of contents:
 - [Prerequisites](#Prerequisites)
 - [Setup](#Setup)
+- [Cleanup](#Cleanup)
 
 ## Prerequisites
 To be able to provision the solution you would need the following:
@@ -37,9 +38,25 @@ change location to terraform_api directory
 $ cd terraform_api
 ```
 
-At this point you can now synthesize the CloudFormation template for this code.
+At this point you can now provision the resources in the template for this code.
 
 ```
 $ terraform plan
 $ terraform apply --auto-approve
 ```
+
+## Useful commands
+
+ * `terraform show`          list all resources in the stack
+ * `terraform state show aws_iam_role.lambda_role`    as an example shows the state of the created lambda role
+
+
+---
+## Cleanup
+
+In order to delete all the infrastructure created, you can perform the below command which will delete the resources.
+
+```
+terraform destroy --auto-apporve
+```
+Enjoy!
