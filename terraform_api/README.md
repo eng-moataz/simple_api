@@ -11,6 +11,7 @@ This project demonstrate how to build the infrastructure required for a simple a
 To be able to provision the solution you would need the following:
 
 1.	[Install terraform](https://learn.hashicorp.com/tutorials/terraform/install-cli)
+2. [Install](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html) and [configure aws cli](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html#cli-configure-quickstart-config)
 
 
 ---
@@ -32,10 +33,11 @@ git clone https://github.com/eng-moataz/simple_api.git
 git clone git@github.com:eng-moataz/simple_api.git
 ```
 
-change location to terraform_api directory
+change location to terraform_api directory and initialize it to install required packages to provision the infrastruture with the specified provider.
 
 ```
 $ cd terraform_api
+$ terraform init
 ```
 
 At this point you can now provision the resources in the template for this code.

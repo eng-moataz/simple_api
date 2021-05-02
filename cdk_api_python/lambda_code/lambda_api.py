@@ -119,7 +119,10 @@ def handler(event, context):
             message = compose_message(payload,path)
             return response_json(message,time_stamp)     
     elif event['httpMethod'] == 'POST':
-        payload = json.loads(body)  # convert string to json
+        if body:
+            payload = json.loads(body)  # convert string to json
+        else:
+            payload = None
         message = compose_message(payload,path)
         if check_if_parameter_exists('last',payload):
             return scan_last_x_items(table,int(check_if_parameter_exists('last',payload)))
