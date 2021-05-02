@@ -11,9 +11,9 @@ This project demonstrate how to build the infrastructure required for a simple a
 ---
 ## Provisioning Infrastructure
 
-Please follow steps described at the links to provision the infrastructure
+Please follow steps described at the links below to provision the infrastructure
 
-[CDK](./cdk_api_pythom/README.md)<br/>
+[CDK](./cdk_api_python/README.md)<br/>
 [Terraform](./terraform_api/README.md)
 
 
