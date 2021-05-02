@@ -13,8 +13,8 @@ This project demonstrate how to build the infrastructure required for a simple a
 
 Please follow steps described at the links to provision the infrastructure
 
-[CDK](cdk_api_pythom/README.md)
-[Terraform](terraform_api/README.md)
+[CDK](./cdk_api_pythom/README.md)<br/><br/>
+[Terraform](./terraform_api/README.md)
 
 
 ---
@@ -79,9 +79,7 @@ Using your browser or any client that can perform POST and GET request you can p
 ---
 ## Future Enhancement
 
-In the CDK project another api gateway and Lambda were created to view the Dynamo table in a nicely HTML view
-
-Dynamo view URL: https://35vz7686m2.execute-api.eu-west-1.amazonaws.com/prod/
+In the CDK project another api gateway and Lambda were created to view the Dynamo table in a nicely HTML view. Dynamo view URL: https://35vz7686m2.execute-api.eu-west-1.amazonaws.com/prod/
 
 ![Enhanced Architecture](./images/dynamo_viewer.jpg)<br/><br/>
 
