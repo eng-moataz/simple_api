@@ -13,7 +13,7 @@ This project demonstrate how to build the infrastructure required for a simple a
 
 Please follow steps described at the links to provision the infrastructure
 
-[CDK](./cdk_api_pythom/README.md)<br/><br/>
+[CDK](./cdk_api_pythom/README.md)<br/>
 [Terraform](./terraform_api/README.md)
 
 
